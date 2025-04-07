@@ -1,0 +1,42 @@
+{
+  "modules": "Go organizes code into packages. Each directory corresponds to a package, and all files in the same directory must have the same package declaration. Go's module system (introduced in Go 1.11) provides dependency management with go.mod files.",
+
+  "imports": "Go uses the 'import' keyword to import packages. Imports can be grouped in parentheses. Go supports aliased imports with a name before the package path, and blank imports with an underscore to trigger side effects without using the package directly.",
+
+  "type-checking": "Go is statically typed with some type inference. The compiler performs type checking at compile time. Go has a simple type system with explicit conversions required between different types - there's no implicit type conversion.",
+
+  "scalar-types": "Go has built-in types for numbers (int, int8 through int64, uint8 through uint64, float32, float64), booleans (bool), strings (string), and complex numbers (complex64, complex128). Go also has a special 'rune' type for Unicode code points.",
+
+  "assignments": "Go uses the := operator for short variable declarations with type inference, and the var keyword for explicit declarations. All variables in Go are mutable. Multiple variables can be assigned at once, and Go provides a convenient syntax for swapping values.",
+
+  "type-annotations": "Type annotations in Go appear after the variable name. Go has a straightforward type system with basic types, composite types (arrays, slices, maps, structs), and function types. Go 1.18+ adds generics with type parameters in square brackets.",
+
+  "lexical-blocks": "Go uses curly braces for blocks, which are required even for single-statement blocks. Unlike some languages, Go blocks are not expressions and don't return values. Go enforces a specific brace style where opening braces must be on the same line as the statement.",
+
+  "constants": "Go uses the 'const' keyword for constants, which can be declared individually or in blocks. Constants in Go can be typed or untyped. Untyped constants have a default type that's used only when necessary, allowing them to be used more flexibly.",
+
+  "function-definitions": "Go functions are defined with the 'func' keyword. They can return multiple values, which is commonly used for returning both a result and an error. Go doesn't support function overloading or default parameters, but variadic functions are supported with '...'.",
+
+  "anonymous-functions": "Go supports anonymous functions (closures) that can capture variables from their surrounding scope. These are often used with goroutines or as callback functions. The syntax is similar to regular functions but without a name.",
+
+  "function-arguments": "Go passes arguments by value, meaning functions receive a copy of the arguments. However, slices, maps, channels, and functions are reference types, so their underlying data can be modified. Pointers can be used for pass-by-reference semantics with other types.",
+
+  "generics": "Go added generics in version 1.18 (2022). Type parameters are specified in square brackets and can be constrained using interfaces. Go's approach to generics is designed to be simple and maintain compatibility with existing code.",
+
+  "pattern-matching": "Go doesn't have built-in pattern matching like some functional languages. Instead, it uses type switches and type assertions to achieve similar functionality. The switch statement in Go is more powerful than in C-like languages, with no fall-through by default.",
+
+  "if-else": "Go's if statements can include an initialization statement before the condition, often used for error checking. Unlike some languages, if statements in Go are not expressions and don't return values. Parentheses around conditions are optional but braces are required.",
+
+  "recursion": "Go supports recursion like most languages, but doesn't optimize tail calls automatically. Deep recursion can cause stack overflow, so iterative approaches are often preferred for performance-critical code.",
+
+  "guards": "Go doesn't have dedicated guard clauses, but achieves similar functionality through early returns. This pattern is common in Go, especially for error handling, where errors are checked immediately and the function returns early if an error is encountered.",
+
+  "error-handling": "Go uses explicit error handling with multiple return values. Functions that can fail typically return an error as their last return value, which is then checked with 'if err != nil'. Go doesn't have exceptions for normal error handling, only for truly exceptional conditions.",
+
+  "loops": "Go has a single 'for' loop construct that can be used as a traditional for loop, a while loop, or an infinite loop. Go also provides 'range' for iterating over arrays, slices, strings, maps, and channels. Break and continue statements work as expected.",
+
+  "macros": "Go doesn't have a macro system like C or Rust. Instead, it relies on code generation tools like 'go generate' for similar functionality. The Go team has intentionally avoided macros to keep the language simple and maintainable.",
+
+  "basic-networking": "Go has a rich standard library for networking, including the 'net' and 'net/http' packages. Creating HTTP servers and clients is straightforward, with built-in support for routing, middleware, and concurrent connections through goroutines."
+}
+

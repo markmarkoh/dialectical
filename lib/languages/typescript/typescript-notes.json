@@ -1,0 +1,44 @@
+{
+  "modules": "TypeScript uses files as modules with explicit exports using 'export' keywords. Functions and variables not exported are private to the module. TypeScript supports both named and default exports, giving flexibility in how modules are structured and consumed.",
+
+  "imports": "TypeScript offers various import styles including named, default, and namespace imports. It also supports dynamic imports for code splitting, allowing modules to be loaded on demand for better performance in large applications.",
+
+  "type-checking": "TypeScript has a structural type system with static type checking at compile time. It offers escape hatches like 'any' and type assertions for flexibility. TypeScript's type system is designed to be gradual, allowing incremental adoption in JavaScript projects.",
+
+  "scalar-types": "TypeScript inherits JavaScript's primitive types: number (for both integers and floats), string, boolean, null, undefined, symbol, and bigint. TypeScript adds type annotations to these primitives and provides additional type safety.",
+
+  "assignments": "TypeScript has three variable declaration keywords: 'const' for immutable bindings, 'let' for block-scoped mutable variables, and 'var' for function-scoped variables (discouraged). TypeScript supports destructuring assignments for objects and arrays.",
+
+  "type-annotations": "TypeScript uses a clean syntax for type annotations where the type follows a colon after the variable name. It supports type aliases, interfaces, union types, intersection types, and utility types for complex type transformations.",
+
+  "lexical-blocks": "TypeScript uses curly braces for blocks with explicit return statements. Blocks are statements, not expressions, so they don't implicitly return values. TypeScript inherits JavaScript's lexical scoping rules.",
+
+  "constants": "TypeScript uses 'const' for immutable bindings, but these are evaluated at runtime, not compile time. For true compile-time constants, TypeScript offers 'const assertions' with 'as const' to make object literals deeply immutable.",
+
+  "function-definitions": "TypeScript supports various function syntaxes: function declarations, function expressions, arrow functions, and method definitions. Functions can have type annotations for parameters and return values, optional parameters, default parameters, and rest parameters.",
+
+  "anonymous-functions": "TypeScript offers concise arrow functions (=>), traditional function expressions, and method shorthand in objects. Arrow functions automatically capture 'this' from their surrounding context, avoiding a common source of bugs in JavaScript.",
+
+  "function-arguments": "TypeScript supports named parameters via object destructuring, default parameters, rest parameters, and optional parameters. TypeScript's type system allows for precise typing of function parameters, including union types and generics.",
+
+  "generics": "TypeScript has a powerful generics system that allows for type-safe reusable components. Generics can be constrained with extends clauses and can be used with functions, interfaces, classes, and type aliases.",
+
+  "pattern-matching": "TypeScript doesn't have built-in pattern matching like some functional languages, but it offers destructuring assignments, type guards, discriminated unions, and switch statements to achieve similar functionality.",
+
+  "if-else": "TypeScript uses standard if/else statements for conditional logic. It also offers the ternary operator (?:) for expression-based conditionals. TypeScript's control flow analysis helps with type narrowing in conditional blocks.",
+
+  "recursion": "TypeScript supports recursion but doesn't optimize tail calls, so deep recursion can cause stack overflows. Workarounds like trampolines or iterative approaches are needed for deep recursion.",
+
+  "guards": "TypeScript uses type guards (typeof, instanceof, in, custom predicates) to narrow types within conditional blocks. This enables the compiler to know more specific types in different branches of code.",
+
+  "error-handling": "TypeScript uses JavaScript's try/catch/finally mechanism for exception handling. It also supports union types with null or undefined for representing optional values, and Result-like types can be implemented for functional error handling.",
+
+  "loops": "TypeScript inherits JavaScript's loop constructs: for, while, do-while, for...in, and for...of. It also supports functional approaches with array methods like map, filter, and reduce.",
+
+  "macros": "TypeScript doesn't have traditional macros, but offers several metaprogramming capabilities through its type system, including conditional types, mapped types, template literal types, and decorators for runtime metaprogramming.",
+
+  "basic-networking": "TypeScript in Node.js environments uses the built-in http/https modules or third-party libraries like axios or fetch for networking. In browsers, it uses the Fetch API or XMLHttpRequest. TypeScript adds type safety to these APIs.",
+
+  "memory-management": "TypeScript inherits JavaScript's memory management, which uses automatic garbage collection. The JavaScript engine (like V8 in Chrome/Node.js) employs a generational garbage collector that identifies and collects objects that are no longer reachable. Memory is automatically allocated when objects are created and freed when they're no longer referenced. Despite automatic garbage collection, memory leaks can still occur through unintended references, especially with closures, event listeners, and global variables. TypeScript adds compile-time checks but doesn't change the runtime memory model. Tools like WeakMap and WeakSet can help manage memory by allowing objects to be garbage collected when no other references exist."
+}
+

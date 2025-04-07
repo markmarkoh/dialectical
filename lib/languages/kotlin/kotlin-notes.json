@@ -1,0 +1,42 @@
+{
+  "modules": "Kotlin organizes code into packages with files. Each file can contain multiple classes, functions, and properties. Unlike some languages, Kotlin doesn't require the file name to match the class name. The 'package' statement at the top of the file defines the namespace.",
+
+  "imports": "Kotlin uses import statements similar to Java. You can import specific classes, functions, or entire packages. Kotlin also supports aliased imports with the 'as' keyword and star imports for bringing in all members of a package.",
+
+  "type-checking": "Kotlin is statically typed with strong type inference. The compiler performs type checking at compile time. Kotlin's smart casts automatically cast types after type checks, reducing the need for explicit casts. The 'is' operator checks types, and 'as' performs explicit casting.",
+
+  "scalar-types": "Kotlin has distinct types for numbers (Byte, Short, Int, Long, Float, Double), characters (Char), booleans (Boolean), and strings (String). Unlike Java, all types are objects - there are no primitives. Kotlin also has nullable types denoted with a question mark (e.g., String?).",
+
+  "assignments": "Kotlin uses 'val' for immutable variables (similar to 'final' in Java) and 'var' for mutable ones. Type inference often makes explicit type annotations unnecessary. Kotlin supports destructuring declarations to extract multiple values from objects.",
+
+  "type-annotations": "Type annotations in Kotlin appear after the variable name, separated by a colon. While often optional due to type inference, they're required when the type can't be inferred. Kotlin supports function types, generic types, and nullable types with the '?' suffix.",
+
+  "lexical-blocks": "Kotlin uses curly braces for blocks. Unlike many languages, blocks in Kotlin are expressions that return values. This enables concise constructs like if/else expressions. Kotlin also has special-purpose blocks like 'run', 'let', 'with', 'apply', and 'also' for scoping and context operations.",
+
+  "constants": "Kotlin uses 'val' for immutable variables and 'const val' for compile-time constants. Constants must be initialized with a value of a primitive type or String. Top-level constants and constants in objects don't need the 'const' modifier to be compile-time constants.",
+
+  "function-definitions": "Kotlin functions are defined with the 'fun' keyword. They can have default parameters, named arguments, and variable arguments with 'vararg'. Single-expression functions can use a concise syntax with '='. Kotlin supports extension functions, infix functions, and operator overloading.",
+
+  "anonymous-functions": "Kotlin supports anonymous functions (lambdas) with a concise syntax. The last parameter of a function can be moved outside the parentheses if it's a lambda. For single-parameter lambdas, 'it' can be used instead of declaring a parameter name.",
+
+  "function-arguments": "Kotlin supports named arguments, default parameters, and variable arguments with 'vararg'. Arguments can be passed by position or by name, and mixing styles is allowed as long as all positional arguments come before named ones.",
+
+  "generics": "Kotlin supports generics with type parameters in angle brackets. It adds variance annotations ('in' for contravariance, 'out' for covariance) and type projections. Kotlin also has reified type parameters for inline functions, allowing access to type information at runtime.",
+
+  "pattern-matching": "Kotlin uses 'when' expressions for pattern matching. It can match against constants, ranges, types, and conditions. The 'when' expression is exhaustive when used as an expression, requiring all possible cases to be covered.",
+
+  "if-else": "In Kotlin, if/else is an expression that returns a value, not just a statement. This allows for concise conditional assignments. Kotlin doesn't have a ternary operator because if/else expressions serve the same purpose.",
+
+  "recursion": "Kotlin supports recursion like most languages. It adds the 'tailrec' modifier to optimize tail-recursive functions, converting them to iterative implementations to avoid stack overflow. Without this modifier, deep recursion can cause stack overflow errors.",
+
+  "guards": "Kotlin doesn't have dedicated guard clauses like some functional languages, but achieves similar functionality through early returns, require/check functions, and the 'takeIf'/'takeUnless' extension functions.",
+
+  "error-handling": "Kotlin uses exceptions for error handling with try/catch/finally blocks. It doesn't distinguish between checked and unchecked exceptions like Java does. Kotlin also provides the Result class in the standard library for functional error handling.",
+
+  "loops": "Kotlin has for loops that iterate over anything that provides an iterator, while loops, and do-while loops. It adds range expressions (1..10), 'in' for membership tests, and 'until' for exclusive ranges. Kotlin also supports functional iteration with forEach, map, filter, etc.",
+
+  "macros": "Kotlin doesn't have a traditional macro system like some languages. Instead, it provides compile-time code generation through annotation processing, reflection, and DSL builders. Kotlin's inline functions can also provide some macro-like capabilities without the complexity.",
+
+  "basic-networking": "Kotlin doesn't have built-in networking libraries, but leverages Java's networking capabilities. For HTTP clients, Kotlin developers typically use libraries like OkHttp, Retrofit, or Ktor Client. For servers, frameworks like Ktor, Spring Boot, or Micronaut are common."
+}
+

@@ -1,0 +1,44 @@
+{
+  "modules": "Gleam organizes code into modules, with each file representing a module. Public functions are marked with the 'pub' keyword, while functions without 'pub' are private to the module. This provides a clean and explicit way to control visibility.",
+
+  "imports": "Gleam has a straightforward import system that allows importing entire modules, specific functions, or modules with aliases. The 'use' keyword can bring functions directly into the current namespace for unqualified access.",
+
+  "type-checking": "Gleam has a strong, sound type system with no escape hatches. All types are checked at compile time, providing safety guarantees without runtime overhead. Gleam's type system is designed to catch errors early while still being ergonomic.",
+
+  "scalar-types": "Gleam has distinct Int and Float types for numbers, Bool for booleans, and String for text. Unlike some languages, Gleam uses different operators for integer and float operations (e.g., '+' for integers, '+.' for floats) to avoid ambiguity.",
+
+  "assignments": "Gleam uses 'let' for immutable bindings. All values in Gleam are immutable, and variables cannot be reassigned after declaration. Pattern matching can be used in assignments to destructure complex data.",
+
+  "type-annotations": "Type annotations in Gleam appear after variable names, separated by a colon. While Gleam has good type inference, explicit annotations can improve readability and help catch errors. Gleam supports generic type parameters and custom types.",
+
+  "lexical-blocks": "Gleam uses curly braces for blocks, which are expressions that return the value of their last expression. This expression-oriented approach allows for concise and readable code, especially when combined with pattern matching.",
+
+  "constants": "Gleam uses 'const' for compile-time constants. These are evaluated during compilation and can be used for configuration, magic numbers, and other values that should not change during program execution.",
+
+  "function-definitions": "Gleam functions are defined with the 'fn' keyword and have implicit returns (the last expression is returned). Gleam supports labeled arguments for better readability and the pipe operator (|>) for function composition.",
+
+  "anonymous-functions": "Gleam supports anonymous functions with the syntax 'fn(params) { body }'. These can be assigned to variables, passed as arguments, or returned from functions. Closures can capture variables from their surrounding scope.",
+
+  "function-arguments": "Gleam supports labeled arguments, which improve readability by making the purpose of each argument clear at the call site. Pattern matching can be used in function parameters to destructure complex data.",
+
+  "generics": "Gleam has a powerful generics system that allows writing reusable, type-safe code. Generic functions and types use type parameters that can be constrained to ensure they have the required properties.",
+
+  "pattern-matching": "Pattern matching is a core feature in Gleam, used with the 'case' expression to handle different shapes of data. It supports matching on literals, variables, tuples, lists, and custom types, with guard clauses for additional conditions.",
+
+  "if-else": "Gleam's if/else is an expression that returns a value, not just a control flow statement. For multi-way conditionals, case expressions are often preferred over nested if/else statements.",
+
+  "recursion": "Gleam optimizes tail recursion, making it as efficient as loops. This allows for elegant recursive solutions without stack overflow concerns. Pattern matching makes recursive functions cleaner and more expressive.",
+
+  "guards": "Gleam supports guard clauses in pattern matching with the 'if' keyword. These allow for additional conditions beyond the structure of the data, making pattern matching more powerful and expressive.",
+
+  "error-handling": "Gleam uses the Result type for error handling, making errors explicit in function signatures. The 'try' operator simplifies working with Results by automatically propagating errors, similar to the '?' operator in Rust.",
+
+  "loops": "Gleam doesn't have traditional loops like for/while. Instead, it uses recursion and higher-order functions like map, filter, and fold. This functional approach leads to more declarative and often more readable code.",
+
+  "macros": "Gleam intentionally doesn't include macros to keep the language simple and predictable. Instead, it focuses on making the core language expressive enough to solve problems without metaprogramming.",
+
+  "basic-networking": "Gleam can leverage the Erlang VM's networking capabilities through libraries like Mist or Wisp for HTTP servers. For HTTP clients, Gleam can use libraries like Gleam HTTP or interface with Erlang's HTTP client libraries.",
+
+  "memory-management": "Gleam runs on the Erlang Virtual Machine (BEAM), which provides automatic garbage collection. The BEAM VM uses a generational garbage collector with per-process heaps, meaning each lightweight process has its own isolated memory space. This design enables parallel garbage collection and prevents long GC pauses that would affect the entire system. When a process terminates, all its memory is immediately reclaimed, which helps prevent memory leaks. The BEAM's approach to memory management is optimized for reliability and soft real-time performance rather than raw speed."
+}
+

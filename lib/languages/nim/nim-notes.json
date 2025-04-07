@@ -1,0 +1,44 @@
+{
+  "modules": "Nim organizes code into modules with files. Public procedures are marked with an asterisk (*) or explicitly exported with the export statement. This provides clear visibility control while keeping the syntax clean.",
+
+  "imports": "Nim offers a flexible import system with various styles including basic imports, aliased imports, selective imports, and qualified/unqualified access. This gives developers fine-grained control over how they use external code.",
+
+  "type-checking": "Nim has a strong, static type system with compile-time checking. It supports both structural and nominal typing, with powerful features like distinct types, type inference, and compile-time function execution.",
+
+  "scalar-types": "Nim provides a rich set of scalar types including various sized integers (int8 to int64), unsigned integers, floating-point numbers, booleans, characters, and strings. It also supports sets and enums as core types.",
+
+  "assignments": "Nim uses 'var' for mutable variables, 'let' for immutable variables (determined at runtime), and 'const' for compile-time constants. It supports multiple assignment, destructuring, and tuple unpacking.",
+
+  "type-annotations": "Nim uses a clean syntax for type annotations where the type follows the variable name. It supports type aliases, custom types, generics, and distinct types for type safety.",
+
+  "lexical-blocks": "Nim uses indentation to define blocks, similar to Python, but with more flexibility. Blocks can be expressions that return values, and Nim supports named blocks for breaking out of nested loops.",
+
+  "constants": "Nim uses 'const' for compile-time constants. These can include complex expressions and even compile-time function calls, making Nim's constant system very powerful for metaprogramming.",
+
+  "function-definitions": "Nim calls functions 'procedures' (proc) and supports multiple return values via tuples, named result variables, and overloading. It also has specialized function types like 'func' (pure functions), 'method' (for polymorphism), and 'iterator'.",
+
+  "anonymous-functions": "Nim supports anonymous procedures with a syntax similar to regular procedures. It also added arrow function syntax in newer versions. Closures can capture variables from their surrounding scope.",
+
+  "function-arguments": "Nim supports various parameter passing modes including by value (default), by reference (var), and compile-time parameters (static). It also supports default values, varargs, and named arguments.",
+
+  "generics": "Nim has a powerful generics system using square brackets for type parameters. It supports constraints through concepts, and compile-time specialization for performance.",
+
+  "pattern-matching": "While Nim doesn't have built-in pattern matching like some functional languages, it achieves similar functionality through case statements, object variants, and destructuring. Custom pattern matching libraries can also be created.",
+
+  "if-else": "Nim's if/else statements are similar to other languages but can also be used as expressions that return values. Nim also provides 'when' for compile-time conditionals.",
+
+  "recursion": "Nim supports recursion with good performance. It doesn't automatically optimize tail recursion, but provides tools for manual optimization. Nim's compile-time execution also allows for powerful recursive metaprogramming.",
+
+  "guards": "Nim doesn't have dedicated guard clauses, but achieves similar functionality through early returns, assertions, and custom pragmas. The 'require' template can be used for preconditions.",
+
+  "error-handling": "Nim uses exceptions for error handling, with try-except-finally blocks. It also supports Result types and Option types for functional error handling approaches.",
+
+  "loops": "Nim provides various loop constructs including for, while, and block statements. It also supports iterators for custom iteration, and functional approaches through the standard library.",
+
+  "macros": "Nim has a powerful macro system that allows for AST manipulation at compile time. This enables domain-specific languages, code generation, and other metaprogramming techniques.",
+
+  "basic-networking": "Nim's standard library includes modules for networking, including both synchronous and asynchronous HTTP clients and servers. The asynchttpserver and httpclient modules provide the core functionality.",
+
+  "memory-management": "Nim offers multiple memory management options. By default, it uses garbage collection, but it also supports reference counting (ARC/ORC), manual memory management, custom allocators, and region-based memory management. Nim provides fine-grained control over memory with features like destructors, move semantics, and weak references. This flexibility allows developers to choose the appropriate memory management strategy for their specific needs, from high-level garbage collection to low-level manual control."
+}
+

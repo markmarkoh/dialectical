@@ -1,0 +1,42 @@
+{
+  "modules": "Python organizes code into modules (files) and packages (directories with __init__.py). Modules can be imported as a whole or selectively. Python's module system is designed to be simple and intuitive, following the 'batteries included' philosophy.",
+
+  "imports": "Python offers various import styles: basic imports, imports with aliases, selective imports, and relative imports within packages. The import system is flexible and supports both absolute and relative imports.",
+
+  "type-checking": "Python is dynamically typed, with type checking occurring at runtime. Since Python 3.5, optional type hints can be added for static analysis tools like mypy, but these are not enforced at runtime. This gives Python flexibility while allowing for optional type safety.",
+
+  "scalar-types": "Python has built-in types for integers (arbitrary precision), floating-point numbers, booleans, strings (Unicode by default), bytes, and None (null value). Python's dynamic typing means variables can change types during execution.",
+
+  "assignments": "Python uses simple assignment with '=' and supports multiple assignment, unpacking, and augmented assignment operators (+=, -=, etc.). Variables are references to objects, and assignment creates or rebinds these references.",
+
+  "type-annotations": "Python 3.5+ supports optional type hints using the typing module. These annotations don't affect runtime behavior but can be used by static analysis tools. Type hints can be added to variables, function parameters, and return values.",
+
+  "lexical-blocks": "Python uses indentation to define blocks, making code structure visually explicit. Blocks are used for functions, classes, loops, and conditional statements. Python's 'with' statement provides a clean way to manage resources.",
+
+  "constants": "Python doesn't have true constants, but uses uppercase variable names as a convention for values that shouldn't be changed. Module-level constants are commonly used for configuration and magic values.",
+
+  "function-definitions": "Python functions are defined with the 'def' keyword and can have default parameters, keyword arguments, variable positional arguments (*args), and variable keyword arguments (**kwargs). Functions are first-class objects that can be passed around and returned.",
+
+  "anonymous-functions": "Python supports anonymous functions with the 'lambda' keyword, though they're limited to a single expression. For more complex anonymous functions, nested functions or function objects are used.",
+
+  "function-arguments": "Python has a flexible argument system with positional arguments, keyword arguments, default values, variable positional arguments (*args), and variable keyword arguments (**kwargs). This flexibility allows for clean APIs and function overloading.",
+
+  "generics": "Python 3.5+ supports generic type hints through the typing module, allowing for type-safe containers and callbacks in static analysis. At runtime, these are erased and don't affect behavior.",
+
+  "pattern-matching": "Python 3.10+ introduced pattern matching with the match/case statement, supporting destructuring of sequences, mappings, and objects. Before 3.10, similar functionality was achieved with if/elif chains and destructuring assignments.",
+
+  "if-else": "Python uses if/elif/else statements for conditional logic. Conditions can be any expression that evaluates to a boolean, with falsy values (0, None, empty containers) treated as False. Python's if statements are clean and readable.",
+
+  "recursion": "Python supports recursion but doesn't optimize tail calls, so deep recursion can cause stack overflows. The default recursion limit is 1000, but can be changed. Iterative approaches are often preferred for deep recursion.",
+
+  "guards": "Python doesn't have dedicated guard clauses, but achieves similar functionality through early returns, assertions, and decorators. The 'assert' statement can be used for preconditions.",
+
+  "error-handling": "Python uses exceptions for error handling with try/except/else/finally blocks. The exception system is hierarchical, allowing for catching specific or general exceptions. Context managers (with statement) provide resource cleanup.",
+
+  "loops": "Python offers for loops for iteration over collections and while loops for conditional iteration. Loops can include else clauses that execute when the loop completes normally. List comprehensions and generator expressions provide concise ways to transform and filter data.",
+
+  "macros": "Python doesn't have traditional macros, but offers metaprogramming through decorators, metaclasses, and runtime reflection. These features allow for modifying or extending behavior of functions and classes.",
+
+  "basic-networking": "Python's standard library includes modules for networking, including socket for low-level networking, http.client and http.server for HTTP, and urllib for URL handling. Third-party libraries like requests are commonly used for higher-level HTTP operations."
+}
+

@@ -1,0 +1,44 @@
+{
+  "modules": "Elixir organizes code into modules with explicit 'defmodule' blocks. Public functions are defined with 'def' and private functions with 'defp'. This clear distinction makes it easy to understand the public API of a module.",
+
+  "imports": "Elixir has a rich import system with 'import', 'alias', 'require', and 'use' directives. Each serves a different purpose: 'import' brings functions into the current scope, 'alias' creates shortcuts for module names, 'require' ensures a module is compiled, and 'use' invokes a special macro.",
+
+  "type-checking": "Elixir is dynamically typed but offers optional type specifications with @spec annotations. These are used for documentation and static analysis tools like Dialyzer, not for runtime type checking.",
+
+  "scalar-types": "Elixir has integers (arbitrary precision), floats, booleans, atoms (symbols), strings (UTF-8 encoded binaries), and charlists. All values are immutable, and operations create new values rather than modifying existing ones.",
+
+  "assignments": "Elixir uses pattern matching for assignments. Variables can be rebound to new values, but the values themselves are immutable. The pin operator (^) can be used to match against a variable's current value instead of rebinding it.",
+
+  "type-annotations": "Elixir uses @spec annotations for type specifications. These are optional and used for documentation and static analysis, not enforced at runtime. Types can be simple like 'integer()' or complex like '{:ok, value} | {:error, reason}'.",
+
+  "lexical-blocks": "Elixir uses 'do/end' blocks for multi-line expressions. These blocks are expressions that return the value of their last expression. Elixir also has various scope functions like 'with' for more complex control flow.",
+
+  "constants": "Elixir uses module attributes (defined with @) as constants. These are evaluated at compile time and can be used for configuration, documentation, and other compile-time needs.",
+
+  "function-definitions": "Elixir functions are defined with 'def' and 'defp' for public and private functions. Pattern matching in function heads is a key feature, allowing for multiple function clauses that handle different input patterns.",
+
+  "anonymous-functions": "Elixir uses 'fn -> end' syntax for anonymous functions and the capture operator (&) for shorthand. Anonymous functions are first-class values and can capture variables from their surrounding scope.",
+
+  "function-arguments": "Elixir supports pattern matching in function arguments, default arguments with \\\\, and keyword lists for optional named parameters. Functions are identified by both their name and arity (number of arguments).",
+
+  "generics": "Elixir doesn't have explicit generics like statically typed languages, but achieves similar functionality through dynamic typing, protocols, and behaviours. This provides flexibility at the cost of compile-time type safety.",
+
+  "pattern-matching": "Pattern matching is a core feature of Elixir, used in assignments, function heads, case expressions, and more. It allows for destructuring complex data and handling different cases concisely.",
+
+  "if-else": "Elixir has if/else expressions that return values. It also offers unless (inverse of if) and cond for multi-way conditionals. All are expressions that return values, not just control flow statements.",
+
+  "recursion": "Recursion is a primary control flow mechanism in Elixir. Tail call optimization makes recursive functions as efficient as loops, and pattern matching makes recursive code cleaner and more expressive.",
+
+  "guards": "Elixir uses guard clauses with 'when' in function definitions and case expressions. Guards can use a limited set of expressions and are used to add conditions to pattern matching.",
+
+  "error-handling": "Elixir uses tagged tuples like {:ok, result} or {:error, reason} for most error handling. It also has try/rescue for exceptions, but the 'let it crash' philosophy with supervision trees is preferred for system resilience.",
+
+  "loops": "Elixir doesn't have traditional loops like for/while. Instead, it uses recursion and higher-order functions like Enum.map, Enum.filter, and Enum.reduce. List comprehensions provide a concise syntax for common operations.",
+
+  "macros": "Elixir has a powerful macro system that operates on the abstract syntax tree (AST). Macros use quote/unquote for code generation and are used extensively in the language and its libraries for domain-specific languages and metaprogramming.",
+
+  "basic-networking": "Elixir leverages Erlang's networking capabilities. The standard library includes modules for HTTP clients and servers, TCP/IP sockets, and more. Libraries like Plug and Phoenix build on these for web development.",
+
+  "memory-management": "Elixir runs on the Erlang Virtual Machine (BEAM), which provides automatic garbage collection with a unique approach. The BEAM uses a per-process heap model, where each lightweight process has its own isolated memory space. This enables parallel garbage collection and prevents system-wide GC pauses. Processes communicate through message passing, which creates copies of data (except for large binaries, which use reference counting), eliminating shared memory concurrency issues. Elixir's immutability prevents many common memory problems found in languages with mutable state. When a process terminates, all its memory is immediately reclaimed. The BEAM's approach prioritizes reliability and fault tolerance over raw performance, making it excellent for distributed systems and applications requiring high availability."
+}
+
